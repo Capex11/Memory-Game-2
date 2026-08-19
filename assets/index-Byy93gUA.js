@@ -20153,7 +20153,7 @@ function Uu({ entries: e, onNextPlayer: t }) {
           }),
           (0, U.jsx)(`div`, {
             className: `mt-4 text-center text-sm font-semibold uppercase tracking-wider text-[#333F48]`,
-            children: `Total Tries: ${parseInt(localStorage.getItem("voxmemory_total_tries_v4") || "0", 10)}`
+            children: `Players: ${Math.max(Object.keys(JSON.parse(localStorage.getItem("voxmemory_players") || "{}")).length, parseInt(localStorage.getItem("voxmemory_total_tries_v4") || "0", 10))}`
           }),
         ],
       }),
@@ -20357,9 +20357,27 @@ function qu({
     })
   );
 }
-function Ju({ onStart: e }) {
+function Ju({ onStart: e, onViewLeaderboard: t }) {
+  let [count, setCount] = (0, b.useState)(() => {
+    try {
+      const players = JSON.parse(localStorage.getItem("voxmemory_players") || "{}");
+      const pCount = Object.keys(players).length;
+      const tries = parseInt(localStorage.getItem("voxmemory_total_tries_v4") || "0", 10);
+      return Math.max(pCount, tries);
+    } catch {
+      return 0;
+    }
+  });
+  (0, b.useEffect)(() => {
+    try {
+      const players = JSON.parse(localStorage.getItem("voxmemory_players") || "{}");
+      const pCount = Object.keys(players).length;
+      const tries = parseInt(localStorage.getItem("voxmemory_total_tries_v4") || "0", 10);
+      setCount(Math.max(pCount, tries));
+    } catch {}
+  }, []);
   return (0, U.jsxs)(`div`, {
-    className: `flex min-h-0 w-full max-w-2xl flex-1 flex-col items-center justify-start gap-8 px-6 pt-2 text-center sm:gap-10`,
+    className: `flex min-h-0 w-full max-w-2xl flex-1 flex-col items-center justify-start gap-10 px-6 pt-4 text-center sm:gap-12`,
     children: [
       (0, U.jsxs)(Su.div, {
         className: `relative`,
@@ -20368,7 +20386,7 @@ function Ju({ onStart: e }) {
         transition: { type: `spring`, stiffness: 180, damping: 22 },
         children: [
           (0, U.jsx)(`div`, {
-            className: `mb-2 text-sm font-medium uppercase tracking-[0.4em] text-[#333F48] sm:text-base`,
+            className: `mb-3 text-sm font-medium uppercase tracking-[0.4em] text-[#333F48] sm:text-base`,
             children: `Memory experience`,
           }),
           (0, U.jsxs)(`h1`, {
@@ -20383,7 +20401,7 @@ function Ju({ onStart: e }) {
             ],
           }),
           (0, U.jsx)(`p`, {
-            className: `mt-3 max-w-md text-base text-[#333F48] sm:text-lg`,
+            className: `mt-4 max-w-md text-base text-[#333F48] sm:text-lg`,
             children: `Match all pairs before time runs out.`,
           }),
           (0, U.jsx)(`div`, {
@@ -20391,13 +20409,55 @@ function Ju({ onStart: e }) {
           }),
         ],
       }),
-      (0, U.jsx)(Su.button, {
-        type: `button`,
-        onClick: e,
-        whileTap: { scale: 0.96 },
-        className: `min-h-[3.8rem] w-full max-w-sm rounded-2xl border border-[#DA1F2C]/70 bg-gradient-to-b from-[#DA1F2C] to-[#AB2328] px-10 py-4 text-lg font-semibold text-white shadow-[0_10px_28px_rgba(0,0,0,0.45),0_0_28px_rgba(218,31,44,0.25),inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-sm transition hover:shadow-[0_12px_36px_rgba(0,0,0,0.5),0_0_34px_rgba(218,31,44,0.35)]`,
-        style: { fontFamily: `var(--font-body, system-ui, sans-serif)` },
-        children: `Start Game`,
+      (0, U.jsxs)(`div`, {
+        className: `flex w-full max-w-sm flex-col items-center gap-4`,
+        children: [
+          (0, U.jsx)(Su.button, {
+            type: `button`,
+            onClick: e,
+            whileTap: { scale: 0.96 },
+            className: `home-btn-primary`,
+            children: `Start Game`,
+          }),
+          (0, U.jsxs)(Su.button, {
+            type: `button`,
+            onClick: t,
+            whileTap: { scale: 0.96 },
+            className: `home-btn-secondary`,
+            children: [
+              (0, U.jsx)(`span`, {
+                className: `text-xl leading-none`,
+                children: `🏆`,
+              }),
+              `Leaderboard`,
+            ],
+          }),
+          (0, U.jsxs)(`div`, {
+            className: `home-player-badge mt-2`,
+            children: [
+              (0, U.jsx)(`span`, {
+                className: `relative flex h-2.5 w-2.5`,
+                children: [
+                  (0, U.jsx)(`span`, {
+                    className: `absolute inline-flex h-full w-full animate-ping rounded-full bg-[#DA1F2C] opacity-75`,
+                  }),
+                  (0, U.jsx)(`span`, {
+                    className: `relative inline-flex h-2.5 w-2.5 rounded-full bg-[#DA1F2C]`,
+                  }),
+                ],
+              }),
+              (0, U.jsxs)(`span`, {
+                children: [
+                  `Players: `,
+                  (0, U.jsx)(`span`, {
+                    className: `font-bold text-[#DA1F2C] tabular-nums text-base ml-1`,
+                    children: count,
+                  }),
+                ],
+              }),
+            ],
+          }),
+        ],
       }),
     ],
   });
@@ -20569,20 +20629,13 @@ function Qu() {
       }),
       (0, U.jsx)(`div`, {
         className: `pointer-events-none absolute left-0 right-0 top-0 z-20 px-5 pt-4 sm:px-8 sm:pt-5 md:px-12`,
-        children: (0, U.jsxs)(`div`, {
-          className: `mx-auto flex w-full max-w-[1400px] items-center justify-between`,
-          children: [
-            (0, U.jsx)(`img`, {
-              src: `./images/vox-cinema-seeklogo.png`,
-              alt: `VOX Cinemas logo`,
-              className: `h-10 w-auto sm:h-14 md:h-16`,
-            }),
-            (0, U.jsx)(`img`, {
-              src: `./images/logo.png`,
-              alt: `ADCB logo`,
-              className: `h-10 w-auto sm:h-13 md:h-16`,
-            }),
-          ],
+        children: (0, U.jsx)(`div`, {
+          className: `mx-auto flex w-full max-w-[1400px] items-center justify-end`,
+          children: (0, U.jsx)(`img`, {
+            src: `./images/logo.png`,
+            alt: `ADCB logo`,
+            className: `h-10 w-auto sm:h-13 md:h-16`,
+          }),
         }),
       }),
       x
@@ -20641,6 +20694,9 @@ function Qu() {
                   (0, U.jsx)(Ju, {
                     onStart: () => {
                       (re(), t(`form`));
+                    },
+                    onViewLeaderboard: async () => {
+                      (re(), h(await Ku(5)), t(`leaderboard`));
                     },
                   }),
                 e === `form` &&
