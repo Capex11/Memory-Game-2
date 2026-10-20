@@ -19421,7 +19421,7 @@ function Eu({ value: e, onChange: t }) {
       t(e + ` `);
     }, [e, t]);
   return (0, U.jsxs)(`div`, {
-    className: `mt-4 w-full max-w-2xl select-none rounded-2xl border border-[#f7f7f7] bg-[#e8e8e8] p-2 shadow-inner sm:p-3`,
+    className: `mt-4 w-full max-w-2xl select-none rounded-2xl border border-[#f7c5d6] bg-[#fff3f7] p-2 shadow-inner sm:p-3`,
     role: `group`,
     "aria-label": `On-screen keyboard`,
     children: [
@@ -19430,7 +19430,7 @@ function Eu({ value: e, onChange: t }) {
         children: (0, U.jsx)(`button`, {
           type: `button`,
           onClick: () => r((e) => !e),
-          className: `rounded-xl border border-[#f7f7f7] bg-white px-4 py-2 text-sm font-semibold text-[#333F48] shadow-sm active:scale-95`,
+          className: `rounded-xl border border-[#f7c5d6] bg-white px-4 py-2 text-sm font-semibold text-[#333F48] shadow-sm active:scale-95`,
           children: n ? `ABC (caps)` : `abc (lower)`,
         }),
       }),
@@ -19467,7 +19467,7 @@ function Eu({ value: e, onChange: t }) {
           (0, U.jsx)(`button`, {
             type: `button`,
             onClick: a,
-            className: `min-h-12 min-w-[4.5rem] rounded-xl border border-[#f7f7f7] bg-white px-3 text-sm font-semibold text-[#333F48] shadow-sm active:scale-95 sm:min-h-14 sm:text-base`,
+            className: `min-h-12 min-w-[4.5rem] rounded-xl border border-[#f7c5d6] bg-white px-3 text-sm font-semibold text-[#333F48] shadow-sm active:scale-95 sm:min-h-14 sm:text-base`,
             children: `⌫ Back`,
           }),
         ],
@@ -19477,7 +19477,7 @@ function Eu({ value: e, onChange: t }) {
         children: (0, U.jsx)(`button`, {
           type: `button`,
           onClick: o,
-          className: `min-h-12 w-full max-w-md rounded-xl border border-[#f7f7f7] bg-white px-4 text-sm font-semibold text-[#333F48] shadow-sm active:scale-95 sm:min-h-14 sm:text-base`,
+          className: `min-h-12 w-full max-w-md rounded-xl border border-[#f7c5d6] bg-white px-4 text-sm font-semibold text-[#333F48] shadow-sm active:scale-95 sm:min-h-14 sm:text-base`,
           children: `Space`,
         }),
       }),
@@ -19488,7 +19488,7 @@ function Du({ label: e, onPress: t }) {
   return (0, U.jsx)(`button`, {
     type: `button`,
     onClick: (e) => { e.stopPropagation(); t(); },
-    className: `flex min-h-12 min-w-10 touch-manipulation items-center justify-center rounded-xl border border-[#f7f7f7] bg-white px-2.5 text-lg font-semibold text-[#333F48] shadow-sm active:scale-95 sm:min-h-14 sm:min-w-11 sm:text-xl`,
+    className: `flex min-h-12 min-w-10 touch-manipulation items-center justify-center rounded-xl border border-[#f7c5d6] bg-white px-2.5 text-lg font-semibold text-[#333F48] shadow-sm active:scale-95 sm:min-h-14 sm:min-w-11 sm:text-xl`,
     children: e,
   });
 }
@@ -19525,7 +19525,7 @@ function Ou({ onSubmit: e, loading: t, error: n }) {
                   children: [
                     `Name`,
                     (0, U.jsx)(`span`, {
-                      className: `ml-0.5 text-[#DA1F2C]`,
+                      className: `ml-0.5 text-[#CC2D66]`,
                       "aria-hidden": !0,
                       children: `*`,
                     }),
@@ -19542,7 +19542,7 @@ function Ou({ onSubmit: e, loading: t, error: n }) {
                   spellCheck: !1,
                   required: !0,
                   "aria-readonly": `true`,
-                  className: `h-14 w-full cursor-default rounded-2xl border border-[#f7f7f7] bg-[#e8e8e8] px-4 text-[#333F48] shadow-inner outline-none ring-0 placeholder:text-[#333F48]/45 focus:border-[#DA1F2C]/75 focus:ring-2 focus:ring-[#DA1F2C]/30`,
+                  className: `h-14 w-full cursor-default rounded-2xl border border-[#f7c5d6] bg-[#fff3f7] px-4 text-[#333F48] shadow-inner outline-none ring-0 placeholder:text-[#333F48]/45 focus:border-[#CC2D66]/75 focus:ring-2 focus:ring-[#CC2D66]/30`,
                   placeholder: `Tap keys below`,
                 }),
               ],
@@ -19550,7 +19550,7 @@ function Ou({ onSubmit: e, loading: t, error: n }) {
             (0, U.jsx)(Eu, { value: r, onChange: i }),
             n
               ? (0, U.jsx)(`p`, {
-                  className: `rounded-xl border border-[#DA1F2C]/45 bg-[#DA1F2C]/15 px-3 py-2 text-left text-sm text-[#333F48]`,
+                  className: `rounded-xl border border-[#CC2D66]/45 bg-[#CC2D66]/15 px-3 py-2 text-left text-sm text-[#333F48]`,
                   children: n,
                 })
               : null,
@@ -19558,7 +19558,7 @@ function Ou({ onSubmit: e, loading: t, error: n }) {
               type: `submit`,
               disabled: t,
               whileTap: t ? void 0 : { scale: 0.98 },
-              className: `h-16 w-full rounded-2xl border border-[#DA1F2C]/70 bg-gradient-to-b from-[#DA1F2C] to-[#AB2328] text-lg font-semibold text-white shadow-[0_10px_28px_rgba(0,0,0,0.45),0_0_26px_rgba(218,31,44,0.28)] transition disabled:cursor-wait disabled:opacity-60`,
+              className: `h-16 w-full rounded-2xl border border-[#CC2D66]/70 bg-gradient-to-b from-[#CC2D66] to-[#A3195A] text-lg font-semibold text-white shadow-[0_10px_28px_rgba(0,0,0,0.45),0_0_26px_rgba(204,45,102,0.28)] transition disabled:cursor-wait disabled:opacity-60`,
               style: { fontFamily: `var(--font-body, system-ui, sans-serif)` },
               children: t ? `Loading…` : `Continue`,
             }),
@@ -19586,6 +19586,27 @@ function ju(e) {
         ),
       ).then(() => void 0);
 }
+// Pink October awareness ribbon. `gap` (background colour) draws the over-crossing band's edge.
+function PinkRibbon({ className: e, style: t, color: n = `#ffffff`, gap: r }) {
+  let i = `M28.6 29.3 L32 36 L38.4 47.6`;
+  return (0, U.jsxs)(`svg`, {
+    className: e,
+    style: t,
+    viewBox: `0 0 64 64`,
+    fill: `none`,
+    stroke: n,
+    strokeWidth: `5.5`,
+    strokeLinejoin: `round`,
+    "aria-hidden": !0,
+    children: [
+      (0, U.jsx)(`path`, {
+        d: `M19 59 L32 36 C38 26 43 18 40.5 11 C38 4 26 4 23.5 11 C21 18 26 26 32 36 L45 59`,
+      }),
+      r && (0, U.jsx)(`path`, { d: i, stroke: r, strokeWidth: `8.5` }),
+      r && (0, U.jsx)(`path`, { d: i }),
+    ],
+  });
+}
 function Mu({
   image: e,
   isFlipped: t,
@@ -19595,7 +19616,6 @@ function Mu({
   onActivate: a,
 }) {
   let o = t,
-    s = `cMark-${(0, b.useId)().replace(/:/g, ``)}`,
     c = (0, b.useCallback)(() => {
       i || a();
     }, [i, a]);
@@ -19605,7 +19625,7 @@ function Mu({
       type: `button`,
       onClick: c,
       disabled: i,
-      className: `relative h-full w-full touch-manipulation select-none focus:outline-none focus-visible:ring-2 focus-visible:ring-[#DA1F2C]/80 active:shadow-[inset_0_0_0_2px_rgba(218,31,44,0.4)] disabled:cursor-not-allowed`,
+      className: `relative h-full w-full touch-manipulation select-none focus:outline-none focus-visible:ring-2 focus-visible:ring-[#CC2D66]/80 active:shadow-[inset_0_0_0_2px_rgba(204,45,102,0.4)] disabled:cursor-not-allowed`,
       style: { WebkitTapHighlightColor: `transparent` },
       "aria-pressed": o,
       "aria-label": o ? `Revealed card` : `Face-down card, tap to flip`,
@@ -19617,68 +19637,22 @@ function Mu({
         },
         children: [
           (0, U.jsxs)(`div`, {
-            className: `absolute inset-0 overflow-hidden rounded-[16px] border border-[#33424A]/90 shadow-[0_10px_26px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.08)]`,
+            className: `absolute inset-0 overflow-hidden rounded-[16px] border border-[#F2A9C2]/90 shadow-[0_10px_26px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.08)]`,
             style: {
               transform: `translateZ(1px) rotateY(0deg)`,
               backfaceVisibility: `hidden`,
               WebkitBackfaceVisibility: `hidden`,
-              background: `radial-gradient(circle at 30% 20%, rgba(218,31,44,0.14), transparent 52%),repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0 8px, transparent 8px 16px),linear-gradient(145deg, #0a0a0a, #13181c 45%, #33424a)`,
+              background: `radial-gradient(circle at 30% 20%, rgba(255,255,255,0.35), transparent 55%),repeating-linear-gradient(45deg, rgba(255,255,255,0.07) 0 8px, transparent 8px 16px),linear-gradient(145deg, #f7b3cb, #e2669a 50%, #c2306c)`,
+              borderColor: `rgba(255,255,255,0.6)`,
+              boxShadow: `0 10px 24px rgba(163,25,90,0.28), inset 0 1px 0 rgba(255,255,255,0.4)`,
             },
             children: [
               (0, U.jsx)(`div`, {
                 className: `absolute inset-0 flex items-center justify-center`,
-                children: (0, U.jsxs)(`svg`, {
-                  className: `h-[66%] w-[66%] max-h-[4rem] max-w-[4rem] opacity-90`,
-                  viewBox: `0 0 64 64`,
-                  fill: `none`,
-                  "aria-hidden": !0,
-                  children: [
-                    (0, U.jsx)(`defs`, {
-                      children: (0, U.jsxs)(`linearGradient`, {
-                        id: s,
-                        x1: `0`,
-                        y1: `0`,
-                        x2: `1`,
-                        y2: `1`,
-                        children: [
-                          (0, U.jsx)(`stop`, {
-                            offset: `0%`,
-                            stopColor: `rgb(218 31 44 / 0.5)`,
-                          }),
-                          (0, U.jsx)(`stop`, {
-                            offset: `100%`,
-                            stopColor: `rgb(171 35 40 / 0.4)`,
-                          }),
-                        ],
-                      }),
-                    }),
-                    (0, U.jsx)(`circle`, {
-                      cx: `32`,
-                      cy: `32`,
-                      r: `20`,
-                      stroke: `url(#${s})`,
-                      strokeWidth: `1.5`,
-                    }),
-                    (0, U.jsx)(`rect`, {
-                      x: `22`,
-                      y: `22`,
-                      width: `20`,
-                      height: `20`,
-                      rx: `4`,
-                      stroke: `url(#${s})`,
-                      strokeWidth: `1.5`,
-                      transform: `rotate(45 32 32)`,
-                    }),
-                    (0, U.jsx)(`rect`, {
-                      x: `28`,
-                      y: `28`,
-                      width: `8`,
-                      height: `8`,
-                      fill: `url(#${s})`,
-                      fillOpacity: `0.35`,
-                      transform: `rotate(45 32 32)`,
-                    }),
-                  ],
+                children: (0, U.jsx)(PinkRibbon, {
+                  className: `h-[66%] w-[66%] max-h-[4rem] max-w-[4rem]`,
+                  gap: `#e2669a`,
+                  style: { filter: `drop-shadow(0 2px 4px rgba(163,25,90,0.45))` },
                 }),
               }),
               (0, U.jsx)(`div`, {
@@ -19686,12 +19660,12 @@ function Mu({
               }),
               r &&
                 (0, U.jsx)(`div`, {
-                  className: `pointer-events-none absolute inset-0 rounded-[16px] ring-2 ring-[#DA1F2C] ring-inset shadow-[0_0_16px_rgba(218,31,44,0.55)]`,
+                  className: `pointer-events-none absolute inset-0 rounded-[16px] ring-2 ring-[#CC2D66] ring-inset shadow-[0_0_16px_rgba(204,45,102,0.55)]`,
                 }),
             ],
           }),
           (0, U.jsxs)(`div`, {
-            className: `absolute inset-0 overflow-hidden rounded-[16px] border border-[#33424A]/90 bg-black/40 shadow-[0_10px_30px_rgba(0,0,0,0.5)]`,
+            className: `absolute inset-0 overflow-hidden rounded-[16px] border border-[#F2A9C2]/90 bg-black/40 shadow-[0_10px_30px_rgba(0,0,0,0.5)]`,
             style: {
               transform: `translateZ(1px) rotateY(180deg)`,
               backfaceVisibility: `hidden`,
@@ -19708,11 +19682,11 @@ function Mu({
               }),
               n &&
                 (0, U.jsx)(`div`, {
-                  className: `pointer-events-none absolute inset-0 rounded-[16px] ring-2 ring-[#DA1F2C]/90 ring-inset shadow-[0_0_18px_rgba(218,31,44,0.55)]`,
+                  className: `pointer-events-none absolute inset-0 rounded-[16px] ring-2 ring-[#CC2D66]/90 ring-inset shadow-[0_0_18px_rgba(204,45,102,0.55)]`,
                 }),
               r &&
                 (0, U.jsx)(`div`, {
-                  className: `pointer-events-none absolute inset-0 rounded-[16px] ring-2 ring-[#DA1F2C] ring-inset shadow-[0_0_16px_rgba(218,31,44,0.55)]`,
+                  className: `pointer-events-none absolute inset-0 rounded-[16px] ring-2 ring-[#CC2D66] ring-inset shadow-[0_0_16px_rgba(204,45,102,0.55)]`,
                 }),
               (0, U.jsx)(`div`, {
                 className: `pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.08),transparent_35%),radial-gradient(circle_at_70%_80%,rgba(0,0,0,0.2),transparent_55%)]`,
@@ -19937,7 +19911,7 @@ function Vu({
         className: `z-10 flex w-full max-w-4xl flex-wrap items-center justify-center gap-3 sm:gap-4 md:gap-6`,
         children: [
           (0, U.jsxs)(`div`, {
-            className: `min-w-[7rem] rounded-2xl border border-[#f7f7f7] bg-[#e8e8e8] px-4 py-2 text-center shadow-lg backdrop-blur-md`,
+            className: `min-w-[7rem] rounded-2xl border border-[#f7c5d6] bg-[#fff3f7] px-4 py-2 text-center shadow-lg backdrop-blur-md`,
             children: [
               (0, U.jsx)(`p`, {
                 className: `text-[0.7rem] font-medium uppercase tracking-widest text-[#333F48]`,
@@ -19949,9 +19923,9 @@ function Vu({
                   re <= 10
                     ? {
                         scale: [1, 1.06, 1],
-                        color: [`#DA1F2C`, `#FFFFFF`, `#DA1F2C`],
+                        color: [`#CC2D66`, `#FFFFFF`, `#CC2D66`],
                       }
-                    : { scale: 1, color: `#DA1F2C` },
+                    : { scale: 1, color: `#CC2D66` },
                 transition:
                   re <= 10
                     ? { duration: 0.9, ease: `easeInOut`, repeat: 1 / 0 }
@@ -19964,20 +19938,20 @@ function Vu({
             ],
           }),
           (0, U.jsxs)(`div`, {
-            className: `min-w-[7rem] rounded-2xl border border-[#f7f7f7] bg-[#e8e8e8] px-4 py-2 text-center shadow-lg backdrop-blur-md`,
+            className: `min-w-[7rem] rounded-2xl border border-[#f7c5d6] bg-[#fff3f7] px-4 py-2 text-center shadow-lg backdrop-blur-md`,
             children: [
               (0, U.jsx)(`p`, {
                 className: `text-[0.7rem] font-medium uppercase tracking-widest text-[#333F48]`,
                 children: `Score`,
               }),
               (0, U.jsx)(`p`, {
-                className: `text-xl font-semibold text-[#DA1F2C] sm:text-2xl`,
+                className: `text-xl font-semibold text-[#CC2D66] sm:text-2xl`,
                 children: S,
               }),
             ],
           }),
           (0, U.jsxs)(`div`, {
-            className: `min-w-[7rem] rounded-2xl border border-[#f7f7f7] bg-[#e8e8e8] px-4 py-2 text-center shadow-lg backdrop-blur-md`,
+            className: `min-w-[7rem] rounded-2xl border border-[#f7c5d6] bg-[#fff3f7] px-4 py-2 text-center shadow-lg backdrop-blur-md`,
             children: [
               (0, U.jsx)(`p`, {
                 className: `text-[0.7rem] font-medium uppercase tracking-widest text-[#333F48]`,
@@ -19998,10 +19972,10 @@ function Vu({
           c
             ? null
             : (0, U.jsxs)(`div`, {
-                className: `col-span-full flex min-h-[12rem] w-full max-w-2xl flex-col items-center justify-center gap-2 rounded-2xl border border-[#f7f7f7] bg-[#e8e8e8] p-6 text-[#333F48]`,
+                className: `col-span-full flex min-h-[12rem] w-full max-w-2xl flex-col items-center justify-center gap-2 rounded-2xl border border-[#f7c5d6] bg-[#fff3f7] p-6 text-[#333F48]`,
                 children: [
                   (0, U.jsx)(`div`, {
-                    className: `h-8 w-8 animate-spin rounded-full border-2 border-[#DA1F2C]/35 border-t-[#DA1F2C]`,
+                    className: `h-8 w-8 animate-spin rounded-full border-2 border-[#CC2D66]/35 border-t-[#CC2D66]`,
                   }),
                   (0, U.jsx)(`p`, {
                     className: `text-sm font-medium`,
@@ -20039,13 +20013,13 @@ function Vu({
             exit: { opacity: 0 },
             children: [
               (0, U.jsx)(Su.div, {
-                className: `h-32 w-32 rounded-full border-2 border-[#DA1F2C]/45 bg-[#DA1F2C]/15 blur-2xl`,
+                className: `h-32 w-32 rounded-full border-2 border-[#CC2D66]/45 bg-[#CC2D66]/15 blur-2xl`,
                 initial: { scale: 0, opacity: 0.8 },
                 animate: { scale: 3.5, opacity: 0 },
                 transition: { duration: 0.8, ease: `easeOut` },
               }),
               (0, U.jsx)(Su.p, {
-                className: `pointer-events-none absolute text-2xl font-bold text-[#333F48] drop-shadow-[0_0_20px_rgba(218,31,44,0.75)] sm:text-4xl`,
+                className: `pointer-events-none absolute text-2xl font-bold text-[#333F48] drop-shadow-[0_0_20px_rgba(204,45,102,0.75)] sm:text-4xl`,
                 initial: { scale: 0.3, opacity: 0, y: 12 },
                 animate: { scale: 1, opacity: 1, y: 0 },
                 transition: { type: `spring`, stiffness: 280, damping: 20 },
@@ -20062,7 +20036,7 @@ function Hu({ onStartPlaying: e }) {
     className: `flex min-h-0 w-full max-w-2xl flex-1 flex-col items-center justify-start gap-6 px-6 pt-2 text-center`,
     children: [
       (0, U.jsxs)(Su.div, {
-        className: `w-full rounded-3xl border border-[#f7f7f7] bg-[#e8e8e8] p-6 shadow-2xl backdrop-blur-md sm:p-8`,
+        className: `w-full rounded-3xl border border-[#f7c5d6] bg-[#fff3f7] p-6 shadow-2xl backdrop-blur-md sm:p-8`,
         initial: { opacity: 0, y: 16 },
         animate: { opacity: 1, y: 0 },
         transition: { type: `spring`, stiffness: 220, damping: 24 },
@@ -20084,7 +20058,7 @@ function Hu({ onStartPlaying: e }) {
         type: `button`,
         onClick: e,
         whileTap: { scale: 0.97 },
-        className: `min-h-[3.8rem] w-full max-w-sm rounded-2xl border border-[#DA1F2C]/70 bg-gradient-to-b from-[#DA1F2C] to-[#AB2328] px-8 py-4 text-lg font-semibold text-white  shadow-[0_10px_28px_rgba(0,0,0,0.45),0_0_30px_rgba(218,31,44,0.3)]`,
+        className: `min-h-[3.8rem] w-full max-w-sm rounded-2xl border border-[#CC2D66]/70 bg-gradient-to-b from-[#CC2D66] to-[#A3195A] px-8 py-4 text-lg font-semibold text-white  shadow-[0_10px_28px_rgba(0,0,0,0.45),0_0_30px_rgba(204,45,102,0.3)]`,
         children: `Start Playing`,
       }),
     ],
@@ -20095,7 +20069,7 @@ function Uu({ entries: e, onNextPlayer: t }) {
     className: `flex min-h-0 w-full max-w-2xl flex-1 flex-col items-center justify-start gap-6 px-5 pt-2 text-center sm:px-6`,
     children: [
       (0, U.jsxs)(Su.div, {
-        className: `w-full rounded-3xl border border-[#f7f7f7] bg-[#e8e8e8] p-6 shadow-2xl backdrop-blur-md sm:p-8`,
+        className: `w-full rounded-3xl border border-[#f7c5d6] bg-[#fff3f7] p-6 shadow-2xl backdrop-blur-md sm:p-8`,
         initial: { opacity: 0, y: 20 },
         animate: { opacity: 1, y: 0 },
         transition: { type: `spring`, stiffness: 200, damping: 24 },
@@ -20109,10 +20083,10 @@ function Uu({ entries: e, onNextPlayer: t }) {
             children: `Top players by fastest completion time`,
           }),
           (0, U.jsxs)(`div`, {
-            className: `mt-6 overflow-hidden rounded-2xl border border-[#f7f7f7] bg-[#e8e8e8]`,
+            className: `mt-6 overflow-hidden rounded-2xl border border-[#f7c5d6] bg-[#fff3f7]`,
             children: [
               (0, U.jsxs)(`div`, {
-                className: `grid grid-cols-[4rem_1fr_7rem] bg-[#e8e8e8] px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#333F48]`,
+                className: `grid grid-cols-[4rem_1fr_7rem] bg-[#fff3f7] px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#333F48]`,
                 children: [
                   (0, U.jsx)(`span`, { children: `Rank` }),
                   (0, U.jsx)(`span`, {
@@ -20130,10 +20104,10 @@ function Uu({ entries: e, onNextPlayer: t }) {
                   (0, U.jsxs)(
                     `div`,
                     {
-                      className: `grid grid-cols-[4rem_1fr_7rem] border-t border-[#f7f7f7] bg-[#e8e8e8] px-4 py-3 text-sm text-[#333F48]`,
+                      className: `grid grid-cols-[4rem_1fr_7rem] border-t border-[#f7c5d6] bg-[#fff3f7] px-4 py-3 text-sm text-[#333F48]`,
                       children: [
                         (0, U.jsxs)(`span`, {
-                          className: `font-semibold text-[#DA1F2C]`,
+                          className: `font-semibold text-[#CC2D66]`,
                           children: [`#`, t + 1],
                         }),
                         (0, U.jsx)(`span`, {
@@ -20161,7 +20135,7 @@ function Uu({ entries: e, onNextPlayer: t }) {
         type: `button`,
         onClick: t,
         whileTap: { scale: 0.97 },
-        className: `min-h-[3.8rem] w-full max-w-sm rounded-2xl border border-[#DA1F2C]/70 bg-gradient-to-b from-[#DA1F2C] to-[#AB2328] px-8 py-4 text-lg font-semibold text-white shadow-[0_10px_28px_rgba(0,0,0,0.45),0_0_30px_rgba(218,31,44,0.3)]`,
+        className: `min-h-[3.8rem] w-full max-w-sm rounded-2xl border border-[#CC2D66]/70 bg-gradient-to-b from-[#CC2D66] to-[#A3195A] px-8 py-4 text-lg font-semibold text-white shadow-[0_10px_28px_rgba(0,0,0,0.45),0_0_30px_rgba(204,45,102,0.3)]`,
         children: `Next Player`,
       }),
     ],
@@ -20257,17 +20231,17 @@ function qu({
       className: `flex min-h-0 w-full max-w-xl flex-1 flex-col items-center justify-start gap-6 px-5 pt-2 text-center sm:gap-8 sm:px-6`,
       children: [
         (0, U.jsxs)(Su.div, {
-          className: `w-full rounded-3xl border border-[#f7f7f7] bg-[#e8e8e8] p-6 shadow-2xl backdrop-blur-md sm:p-8`,
+          className: `w-full rounded-3xl border border-[#f7c5d6] bg-[#fff3f7] p-6 shadow-2xl backdrop-blur-md sm:p-8`,
           initial: { opacity: 0, y: 28, scale: 0.9 },
           animate: { opacity: 1, y: 0, scale: 1 },
           transition: { type: `spring`, stiffness: 200, damping: 22 },
           children: [
             (0, U.jsx)(`div`, {
-              className: `mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-full border border-[#f7f7f7] bg-[#e8e8e8] text-2xl`,
+              className: `mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-full border border-[#f7c5d6] bg-[#fff3f7] text-2xl`,
               children: a ? `✓` : `!`,
             }),
             (0, U.jsx)(`p`, {
-              className: `text-sm font-medium uppercase tracking-widest text-[#DA1F2C]`,
+              className: `text-sm font-medium uppercase tracking-widest text-[#CC2D66]`,
               children: a ? `Round complete` : `Time up`,
             }),
             (0, U.jsx)(`h2`, {
@@ -20289,27 +20263,27 @@ function qu({
               className: `mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3`,
               children: [
                 (0, U.jsxs)(`div`, {
-                  className: `rounded-2xl border border-[#f7f7f7] bg-[#e8e8e8] px-4 py-3`,
+                  className: `rounded-2xl border border-[#f7c5d6] bg-[#fff3f7] px-4 py-3`,
                   children: [
                     (0, U.jsx)(`p`, {
                       className: `text-xs font-medium uppercase tracking-wider text-[#333F48]`,
                       children: `Score`,
                     }),
                     (0, U.jsx)(`p`, {
-                      className: `text-2xl font-bold text-[#DA1F2C] sm:text-3xl`,
+                      className: `text-2xl font-bold text-[#CC2D66] sm:text-3xl`,
                       children: n,
                     }),
                   ],
                 }),
                 (0, U.jsxs)(`div`, {
-                  className: `rounded-2xl border border-[#f7f7f7] bg-[#e8e8e8] px-4 py-3`,
+                  className: `rounded-2xl border border-[#f7c5d6] bg-[#fff3f7] px-4 py-3`,
                   children: [
                     (0, U.jsx)(`p`, {
                       className: `text-xs font-medium uppercase tracking-wider text-[#333F48]`,
                       children: `Time`,
                     }),
                     (0, U.jsx)(`p`, {
-                      className: `text-2xl font-bold text-[#DA1F2C] tabular-nums sm:text-3xl`,
+                      className: `text-2xl font-bold text-[#CC2D66] tabular-nums sm:text-3xl`,
                       children: ((e) =>
                         `${String(Math.floor(e / 60))}:${String(e % 60).padStart(2, `0`)}`)(
                         r,
@@ -20318,7 +20292,7 @@ function qu({
                   ],
                 }),
                 (0, U.jsxs)(`div`, {
-                  className: `rounded-2xl border border-[#f7f7f7] bg-[#e8e8e8] px-4 py-3`,
+                  className: `rounded-2xl border border-[#f7c5d6] bg-[#fff3f7] px-4 py-3`,
                   children: [
                     (0, U.jsx)(`p`, {
                       className: `text-xs font-medium uppercase tracking-wider text-[#333F48]`,
@@ -20349,7 +20323,7 @@ function qu({
           onClick: o,
           whileTap: s ? void 0 : { scale: 0.97 },
           disabled: s,
-          className: `min-h-[3.8rem] w-full max-w-sm rounded-2xl border border-[#DA1F2C]/70 bg-gradient-to-b from-[#DA1F2C] to-[#AB2328] px-8 py-4 text-lg font-semibold text-white shadow-[0_10px_28px_rgba(0,0,0,0.45),0_0_30px_rgba(218,31,44,0.3)] disabled:opacity-70`,
+          className: `min-h-[3.8rem] w-full max-w-sm rounded-2xl border border-[#CC2D66]/70 bg-gradient-to-b from-[#CC2D66] to-[#A3195A] px-8 py-4 text-lg font-semibold text-white shadow-[0_10px_28px_rgba(0,0,0,0.45),0_0_30px_rgba(204,45,102,0.3)] disabled:opacity-70`,
           style: { fontFamily: `var(--font-body, system-ui, sans-serif)` },
           children: s ? `Loading Leaderboard...` : `View Leaderboard`,
         }),
@@ -20390,7 +20364,7 @@ function Ju({ onStart: e, onViewLeaderboard: t }) {
             children: `Memory experience`,
           }),
           (0, U.jsxs)(`h1`, {
-            className: `mx-auto flex flex-col items-center justify-center bg-gradient-to-r from-white via-[#F2F2F2] to-[#DA1F2C] bg-clip-text text-center text-4xl font-bold leading-[0.95] text-transparent sm:text-6xl md:text-7xl`,
+            className: `mx-auto flex flex-col items-center justify-center bg-gradient-to-r from-[#CC2D66] via-[#EC6A9C] to-[#A3195A] bg-clip-text text-center text-4xl font-bold leading-[0.95] text-transparent sm:text-6xl md:text-7xl`,
             style: { fontFamily: `var(--font-body, system-ui, sans-serif)` },
             children: [
               (0, U.jsx)(`span`, {
@@ -20405,7 +20379,7 @@ function Ju({ onStart: e, onViewLeaderboard: t }) {
             children: `Match all pairs before time runs out.`,
           }),
           (0, U.jsx)(`div`, {
-            className: `pointer-events-none absolute -inset-6 -z-10 rounded-3xl bg-[#DA1F2C]/12 blur-2xl`,
+            className: `pointer-events-none absolute -inset-6 -z-10 rounded-3xl bg-[#CC2D66]/12 blur-2xl`,
           }),
         ],
       }),
@@ -20439,10 +20413,10 @@ function Ju({ onStart: e, onViewLeaderboard: t }) {
                 className: `relative flex h-2.5 w-2.5`,
                 children: [
                   (0, U.jsx)(`span`, {
-                    className: `absolute inline-flex h-full w-full animate-ping rounded-full bg-[#DA1F2C] opacity-75`,
+                    className: `absolute inline-flex h-full w-full animate-ping rounded-full bg-[#CC2D66] opacity-75`,
                   }),
                   (0, U.jsx)(`span`, {
-                    className: `relative inline-flex h-2.5 w-2.5 rounded-full bg-[#DA1F2C]`,
+                    className: `relative inline-flex h-2.5 w-2.5 rounded-full bg-[#CC2D66]`,
                   }),
                 ],
               }),
@@ -20450,7 +20424,7 @@ function Ju({ onStart: e, onViewLeaderboard: t }) {
                 children: [
                   `Players: `,
                   (0, U.jsx)(`span`, {
-                    className: `font-bold text-[#DA1F2C] tabular-nums text-base ml-1`,
+                    className: `font-bold text-[#CC2D66] tabular-nums text-base ml-1`,
                     children: count,
                   }),
                 ],
@@ -20624,8 +20598,17 @@ function Qu() {
         "aria-hidden": !0,
         className: `pointer-events-none absolute inset-0 z-0 h-full w-full object-cover`,
       }),
-      (0, U.jsx)(`div`, {
-        className: `pointer-events-none absolute inset-0 z-0 bg-black/8`,
+      (0, U.jsx)(PinkRibbon, {
+        className: `pointer-events-none absolute z-0`,
+        style: {
+          right: `-4vmin`,
+          bottom: `-6vmin`,
+          height: `62vmin`,
+          width: `62vmin`,
+          opacity: 0.6,
+          transform: `rotate(-12deg)`,
+          filter: `drop-shadow(0 0 18px rgba(204,45,102,0.35))`,
+        },
       }),
       (0, U.jsx)(`div`, {
         className: `pointer-events-none absolute left-0 right-0 top-0 z-20 px-5 pt-4 sm:px-8 sm:pt-5 md:px-12`,
@@ -20647,13 +20630,13 @@ function Qu() {
               onClick: (e) => {
                 (e.stopPropagation(), re(), ie());
               },
-              className: `pointer-events-auto rounded-xl border border-[#33424A]/70 bg-white/75 px-3 py-2 text-xs font-medium text-white shadow-lg backdrop-blur-md sm:text-sm`,
+              className: `pointer-events-auto rounded-xl border border-[#F2A9C2]/70 bg-white/75 px-3 py-2 text-xs font-medium text-white shadow-lg backdrop-blur-md sm:text-sm`,
               children: `Fullscreen`,
             }),
           }),
       v
         ? (0, U.jsx)(`div`, {
-            className: `absolute bottom-4 left-1/2 z-30 -translate-x-1/2 rounded-xl border border-[#33424A]/50 bg-white/90 px-4 py-2 text-sm text-[#333F48] shadow-[0_0_24px_rgba(51,63,72,0.18)]`,
+            className: `absolute bottom-4 left-1/2 z-30 -translate-x-1/2 rounded-xl border border-[#F2A9C2]/50 bg-white/90 px-4 py-2 text-sm text-[#333F48] shadow-[0_0_24px_rgba(51,63,72,0.18)]`,
             children: v,
           })
         : null,
