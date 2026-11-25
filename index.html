@@ -1,18 +1,62 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<!-- KIOSK CLOSED. To reopen: git checkout 93a8e5a -- index.html -->
+<html lang="en"><head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
-    <title>3D Memory — Kiosk</title>
-    <script type="module" crossorigin="" src="assets/index-Byy93gUA.js"></script>
-    <link rel="stylesheet" crossorigin="" href="assets/index-YlW0w8lG.css">
+    <title>3D Memory — Closed</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body { height: 100%; }
+      body {
+        font-family: 'Sora', system-ui, sans-serif;
+        background: #f9bfcb url('images/bg.png') center / cover no-repeat;
+        color: #333F48;
+        display: flex; align-items: center; justify-content: center;
+        padding: 6vmin;
+        user-select: none; -webkit-user-select: none;
+        overflow: hidden;
+      }
+      .card {
+        width: min(88vw, 720px);
+        background: rgba(255, 255, 255, 0.88);
+        border-radius: 4vmin;
+        padding: 7vmin 6vmin;
+        text-align: center;
+        box-shadow: 0 2vmin 6vmin rgba(214, 29, 77, 0.18);
+      }
+      .badge {
+        display: inline-block;
+        background: #D61D4D; color: #fff;
+        font-weight: 700; letter-spacing: 0.2em;
+        font-size: clamp(14px, 2.6vmin, 26px);
+        padding: 1.4vmin 4vmin; border-radius: 999px;
+        margin-bottom: 4vmin;
+      }
+      h1 { font-size: clamp(28px, 6vmin, 64px); font-weight: 700; line-height: 1.15; color: #D61D4D; }
+      p  { font-size: clamp(16px, 3vmin, 30px); margin-top: 2vmin; line-height: 1.5; }
+      .ar { direction: rtl; font-family: 'Sora', 'Segoe UI', Tahoma, sans-serif; }
+      hr { border: 0; height: 2px; background: #f9bfcb; margin: 5vmin auto; width: 40%; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-  
-
+    <main class="card">
+      <span class="badge">CLOSED</span>
+      <h1>The game is currently closed</h1>
+      <p>Please check back soon. Thank you!</p>
+      <hr>
+      <h1 class="ar">اللعبة مغلقة حالياً</h1>
+      <p class="ar">يرجى العودة لاحقاً. شكراً لكم!</p>
+    </main>
+    <script>
+      // Kiosk: block context menu / zoom gestures
+      document.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+      document.addEventListener('gesturestart', function (e) { e.preventDefault(); });
+    </script>
 </body></html>
